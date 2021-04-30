@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi8/openjdk-11:1.3-6
+FROM registry.access.redhat.com/ubi8/openjdk-11:1.3-15
 
 ENV CONF_DIR=/opt/cryostat.d
 
