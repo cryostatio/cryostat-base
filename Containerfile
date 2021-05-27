@@ -10,3 +10,8 @@ ENV SSL_TRUSTSTORE=$CONF_DIR/truststore.p12 \
 COPY include $CONF_DIR
 
 RUN $CONF_DIR/truststore-setup.sh
+
+USER root
+RUN chmod -R g=u $CONF_DIR
+
+USER 185
