@@ -16,7 +16,7 @@ pushd $CONF_DIR
 keytool -importkeystore \
     -noprompt \
     -storetype PKCS12 \
-    -srckeystore /usr/lib/jvm/java-11-openjdk/lib/security/cacerts \
+    -srckeystore /usr/lib/jvm/jre-11-openjdk/lib/security/cacerts \
     -srcstorepass changeit \
     -destkeystore "$SSL_TRUSTSTORE" \
     -deststorepass "$SSL_TRUSTSTORE_PASS"
