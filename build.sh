@@ -5,7 +5,7 @@ if [ -z "$IMAGE" ]; then
 fi
 
 if [ -z "$TAG" ]; then
-    TAG="v2.1.0"
+    TAG="2.1.0"
 fi
 
 if [ -z "$BUILDER" ]; then
